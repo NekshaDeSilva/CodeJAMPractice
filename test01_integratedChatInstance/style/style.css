@@ -47,7 +47,7 @@ body{
     align-items: center;
     border-radius: .2rem;
 }
-.btn{
+.btn-style{
     width: 25%;
     height: 2rem;
     border: .1rem solid black ;
@@ -61,7 +61,7 @@ body{
     cursor: default;
     border-radius: .2rem;
 }
-.btn:hover{
+.btn-style:hover{
     filter: invert(1);
     font-weight: 700;
     border-color: transparent;
@@ -94,4 +94,7 @@ body{
 .boxgrid{
      width: 100%;
      display: flex;
+}
+.btn-ci{
+    background-color: red;
 }
