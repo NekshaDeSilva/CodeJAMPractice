@@ -1,3 +1,6 @@
+body{
+    background-color: rgb(24,24,24);
+}
 .calculator{
     width: 9rem;
     height:max-content;
@@ -61,7 +64,7 @@
 .btn:hover{
     filter: invert(1);
     font-weight: 700;
-    
+    border-color: transparent;
 }
 .display-frame{
     width: 100%;
@@ -75,15 +78,20 @@
     font-size: 120%;
     font-weight: 600;
     text-align: left;
+    color: white;
     padding-left:.3rem ;
     width: 100%;
 }
 .multiplications-brn{
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
+    color: whitesmoke;
     width: 100%;
     font-size: 60%;
     text-align: right;
     padding-right:.3rem ;
-visibility:hidden;
+}
+.boxgrid{
+     width: 100%;
+     display: flex;
 }
