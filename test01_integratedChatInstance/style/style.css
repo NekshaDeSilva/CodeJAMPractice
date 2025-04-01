@@ -1,3 +1,6 @@
+:root{
+    --randcolor:black;
+}
 body{
     background-color: rgb(24,24,24);
 }
@@ -97,4 +100,16 @@ body{
 }
 .btn-ci{
     background-color: red;
+}
+.practice-div{
+    width: 10rem;
+    height: 10rem;
+    background-color: var(--randcolor);
+    margin: 2rem;
+    border-radius:.3rem;
+    transition: 200ms ease-in-out;
+}
+body h1{
+    color : purple; /*The priority of HTML attribute is higher than CSS stylesheet styling. Hence, HTML attribute value is applied despite all css styleing related to it.*/
+    
 }

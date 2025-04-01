@@ -118,3 +118,113 @@ function person(name, age, gender){
     this.gender = gender
 }
 console.log(person('neksha', '16', 'male'));
+function preventin(){
+    $('form').on('submit', function(event){
+        event.preventDefault();
+        //window.open("https://www.appleasia.lk")
+        })
+}
+preventin(); //EventPreventing from actions 
+function randRoot(root, root1, root2){
+        root = Math.round(Math.random()*100)
+        root2 = Math.round(Math.random()*35)
+        root1 = Math.round(Math.random()*24)
+        return ('rgb('+ root2 +','+ root1 +',' +root +  ')');
+        
+}
+function applyRandColours(numberofobjects){
+   numberofobjects =$('.practice-division-segment').find('.practice-div').length;//the .practice-division-segment <-- this term is called as selector.
+   for(var loopcount= 0; loopcount < numberofobjects; loopcount++){ //suffix incremental operator
+        $('.practice-div').eq(loopcount).css({
+            'background': randRoot()
+        })
+        
+   }
+}
+
+setInterval(applyRandColours,200);
+$('.practice-div').on('click', function(){
+    $(this).on('click',function(){
+
+    })
+})
+
+function toggleX(){
+    $('button').on('click', function(){
+        $('.practice-div').slideToggle(); //disappears and reappears which means it changes the styles to visibility off and on.
+        $('input').toggle();
+
+        
+        //$('input').show(); //used to reappear when hide() used.
+
+    });
+    
+    
+}
+toggleX();//forToggleEvents
+
+function upDownEvents(){
+    $('.practice-div').slideUp();
+    setTimeout(function(){
+        $('.practice-div').slideDown();
+
+        },3000)
+}
+$('body').on('dblclick', function(){
+    upDownEvents();
+})
+//essential functions
+
+function findingHowMuchDivs(countN){
+    countN = $('body').find('div').length;
+    return countN;
+
+
+}
+console.log(findingHowMuchDivs());
+$('body h1').css({
+    'color':'hotpink' //JS Codes are the highest priority.
+})
+
+function animationPure(){
+    $('.practice-div').removeClass('practice-div')
+    .eq(1).animate({
+        width: '100%',
+        height: '200px',
+        opacity: 1,
+        backgroundColor: 'rgb(255,255,255)' //in jQuery or any other Javascript styling as an propeerty, it's essential to use Camel Case intead of ''(inverted commas)
+    }, 1500)
+     //we can use this method instead of declaring selector every time.
+}
+$('input').on('input', function(){//"change" is used to listen when a a whole change is appeared to it like right after enter key is pressed
+    animationPure();
+    
+    console.log('inputting');
+})
+function traversy(){ //traversy is moving through elements
+    for(var i =0; i <10; i++){
+        $('.practice-div').next().css({
+            'transform':'scale(1.3)',
+            'width':'8%'
+            
+        });
+        $('.practice-div').prev().css({ //this selects the previous element in a sequence of added element. Watch how [h1] get's also inversed after selectign it as the previous element of  [prqactice-div]
+            'filter':'invert(1)'
+        })
+        $('.practice-div').filter('.special').css({ //selects the special div elements with class [special]
+            'border' : '.1rem solid white',
+            'transform':'translateX(50%)'
+        })
+        $('.practice-division-segment').css({
+            'display':'flex'
+
+        })
+        
+    }
+  
+            $('h2').text($('.practice-division-segment').find('.special').length + ' Speacial Boxes');  // prints hoe muuch special elemtns there
+        //IMPORTANT: JQuery traversy only works for parent class selectors.
+
+
+        
+}
