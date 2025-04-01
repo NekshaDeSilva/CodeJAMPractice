@@ -226,5 +226,31 @@ function traversy(){ //traversy is moving through elements
         //IMPORTANT: JQuery traversy only works for parent class selectors.
 
 
+
         
 }
+//JQuery AJAX -------------Asynchornous JavaScript and XML.
+//Maybe help  with gettig data from other sources to our chatBOT without reloading the content. 
+//I Think webSOCKETS will be even more valueable than AJAX.
+function jqeryAJAX1(val){
+   $('h1').load('./assets/ststic/AJAX.txt'); //Wow! the data on text file is loaded by AJAX
+}
+//AJAX Error handeling
+function AJAXErrorCatch(){
+    $('h1').load('./assets/nothing.txt' , function(responseTxt, statusTxt){
+        if(statusTxt =="success"){
+            alert('successfully loaded without page reload.')
+        }
+        if(statusTxt == 'error'){
+            $(this).html('error:' + responseTxt + ' //JQUERY AJAX ERROR HANDELING' )
+        }
+    })
+}
+
+$.get("./assets/ststic/ajax.txt", function(response){
+    console.log(response)
+});
+
+$.post("./assets/ststic/ajax.txt", {name:'neksha'}, function(response){
+    console.log(response)
+})
