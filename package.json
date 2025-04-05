@@ -1,0 +1,19 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Package-com",
+  "main": "app.js",
+  "scripts": {
+    "test": "k"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekshadesilva/codejampractice.git"
+  },
+  "author": "Neksha DeSilva (ASE NCCX CEO)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nekshadesilva/codejampractice/issues"
+  },
+  "homepage": "https://github.com/nekshadesilva/codejampractice#readme"
+}
