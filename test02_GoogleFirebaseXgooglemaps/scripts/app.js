@@ -1,3 +1,9 @@
+import ReactDOM from 'react-dom/client';
+import React from 'react';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+
+// After
 
     // React Component Example: "Greeting"
     function Greeting(props) {
@@ -31,4 +37,3 @@
       }
   
       // Render the main App to the root div
-      ReactDOM.render(<App />, document.getElementById('root'));

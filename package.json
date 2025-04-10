@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/nekshadesilva/codejampractice/issues"
   },
-  "homepage": "https://github.com/nekshadesilva/codejampractice#readme"
+  "homepage": "https://github.com/nekshadesilva/codejampractice#readme",
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
 }
