@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nekshadesilva/codejampractice#readme",
   "dependencies": {
+    "express": "^5.1.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   }
