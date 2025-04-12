@@ -254,3 +254,7 @@ $.get("./assets/ststic/ajax.txt", function(response){
 $.post("./assets/ststic/ajax.txt", {name:'neksha'}, function(response){
     console.log(response)
 })
+
+var namec = 'nekshadesilva';
+var agegroup = 'teen';
+console.log(`my name is ${namec} and my age is ${agegroup}`); //${} template literals usage example.
