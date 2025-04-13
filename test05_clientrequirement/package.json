@@ -1,0 +1,25 @@
+{
+  "name": "catalystai",
+  "version": "1.0.0",
+  "description": "CatalystAI",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekshadesilva/catalystai.git"
+  },
+  "author": "@NekshaDeSilva",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/nekshadesilva/catalystai/issues"
+  },
+  "homepage": "https://github.com/nekshadesilva/catalystai#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1"
+  }
+}
